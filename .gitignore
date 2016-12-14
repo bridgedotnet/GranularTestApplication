@@ -1,0 +1,7 @@
+# files
+*.csproj.*
+
+# folders
+bin/
+obj/
+/packages/
