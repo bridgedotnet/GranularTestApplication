@@ -81,8 +81,6 @@
     <Error Condition="!Exists('..\BuildTasks\Granular.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\BuildTasks\Granular.targets'))" />
   </Target>
   <Import Project="$(SolutionDir)BuildTasks\Granular.targets" Condition="Exists('$(SolutionDir)BuildTasks\Granular.targets')" />
-  <Import Project="$(SolutionDir)BuildTasks\GeneratedItems.targets" Condition="Exists('$(SolutionDir)BuildTasks\GeneratedItems.targets')" />
-  <Import Project="GeneratedItems.targets" Condition="Exists('GeneratedItems.targets')" />
   <Import Project="$(SolutionDir)BuildTasks\ProjectLink.targets" Condition="Exists('$(SolutionDir)BuildTasks\ProjectLink.targets')" />
   <Import Project="ProjectLink.targets" Condition="Exists('ProjectLink.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
