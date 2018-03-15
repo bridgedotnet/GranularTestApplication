@@ -24,5 +24,10 @@ namespace GranularTestApplication
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            System.Console.WriteLine("Hello, World!");
+        }
     }
 }
