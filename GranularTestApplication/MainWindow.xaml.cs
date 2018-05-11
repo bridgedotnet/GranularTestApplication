@@ -25,9 +25,22 @@ namespace GranularTestApplication
             InitializeComponent();
         }
 
+        private int count = 1;
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            System.Console.WriteLine("Hello, World!");
+            btn1.Content = $"Clicked {count} times";
+
+            // Write a message to Console 
+            // on first Button click.
+            if (count == 1)
+            {
+                var msg = "Welcome to Granular!";
+
+                System.Console.WriteLine(msg);
+            }
+
+            count++;
         }
     }
 }
