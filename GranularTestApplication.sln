@@ -5,9 +5,10 @@ VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GranularTestApplication", "GranularTestApplication\GranularTestApplication.csproj", "{FE940CA9-9C0F-4A5B-B8F3-8EA202378481}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GranularTestApplication.Wpf", "GranularTestApplication.Wpf\GranularTestApplication.Wpf.csproj", "{1C6E3F7B-2E06-4885-87D3-626C23FB4780}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GranularTestApplication.Web", "GranularTestApplication.Web\GranularTestApplication.Web.csproj", "{4313A290-697D-451F-B670-1536631CE42E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FE940CA9-9C0F-4A5B-B8F3-8EA202378481} = {FE940CA9-9C0F-4A5B-B8F3-8EA202378481}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +20,6 @@ Global
 		{FE940CA9-9C0F-4A5B-B8F3-8EA202378481}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE940CA9-9C0F-4A5B-B8F3-8EA202378481}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE940CA9-9C0F-4A5B-B8F3-8EA202378481}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1C6E3F7B-2E06-4885-87D3-626C23FB4780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1C6E3F7B-2E06-4885-87D3-626C23FB4780}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1C6E3F7B-2E06-4885-87D3-626C23FB4780}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1C6E3F7B-2E06-4885-87D3-626C23FB4780}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4313A290-697D-451F-B670-1536631CE42E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4313A290-697D-451F-B670-1536631CE42E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4313A290-697D-451F-B670-1536631CE42E}.Release|Any CPU.ActiveCfg = Release|Any CPU
